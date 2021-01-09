@@ -1,0 +1,7 @@
+name: AntiWerbung
+version: 1.0
+api: 3.0.0
+main: AntiWerbung\AntiWerbung
+load: STARTUP
+author: r3pt1s
+description: AntiWerbung Plugin by r3pt1s
