@@ -16,7 +16,6 @@ class PlayerChatListener implements Listener {
             foreach (API::getConfig()->getAll(true) as $value) {
                 if (strpos($message, $value)) {
                     $chatEvent->setCancelled(true);
-                    $chatEvent->getPlayer()->addAttachment(AntiWerbung::getInstance())->setPermission("antiwerbung.notify", true);
                     $event = new PlayerAdvertisementEvent($chatEvent->getPlayer(), $chatEvent->getMessage());
                     $event->call();
                 }
